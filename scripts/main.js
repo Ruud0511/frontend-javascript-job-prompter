@@ -95,7 +95,7 @@ console.log(userInput);
 
 
 /* Opdracht 2b: tijd voor het echte werk! Op basis van wat de gebruiker invoert ("marketing", "sales" of "customer service") willen wij een beschrijving van die afdeling in de console loggen. Hiervoor typ je natuurlijk niet handmatig de beschrijvingen over! Je spreekt ze aan via het departments-object: hiervoor zul je dus een beslissingsstructuur moeten bouwen. Ongeacht de gekozen afdeling, log je de uitkomst in het volgende format: "Je koos [ingevoerde keuze]. [beschrijving afdeling]" */
-
+/*
 if (userInput === 'marketing') {
     console.log('Je koos voor ' + userInput + '. ' + departments.marketing.description);
 } else if (userInput === 'sales') {
@@ -105,7 +105,7 @@ if (userInput === 'marketing') {
 }
 
 /* Opdracht 2c: test of alles werkt door alle mogelijke afdelingen een keertje te voeren en te checken of je de gewenste output krijgt. Maak jouw beslisboom nu extra gebruiksvriendelijk door de melding "Ongeldige keuze. Probeer het opnieuw door de pagina te verversen." in de console te laten zien wanneer de gebruiker een spelfout maakt of iets verkeerds invoert. Tip: je kunt hiervoor console.error() gebruiken in plaats van console.log(). */
-
+/*
 else  {
     console.error('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.');
 }
@@ -132,7 +132,26 @@ if (userInputMarketing === '0') {
  */
 
 /* Opdracht 4a: Zet alle code uit opdracht 2 weer aan. Comment de code uit opdracht 3 uit. Log de afdeling-beschrijving van de ingevoerde afdeling uit de eerste prompt in de console, in het volgende format: "[afdeling-naam] is een leuke afdeling om te werken. Er werken op dit moment [aantal] medewerkers." Tip: gebruik hiervoor de blokhaak notatie. */
-
+/*
 console.log(userInput + ' is een leuke afdeling om te werken. Er werken op dit moment ' + departments[userInput].numberOfEmployees + ' medewerkers.');
 
+/* Opdracht 4b: We gaan de prompt uit opdracht 3 omschrijven. In plaats van overal hardcoded de afdeling 'marketing' te gebruiken, zorg je dat de prompt de informatie toont op basis van ingevoerde afdeling door de gebruiker. */
 
+const userInputTotal = prompt ('Je koos ' + [userInput] + '. Over welke functie wil je meer weten? Voer een getal tussen 0 en 4 in. 0: '[departments[userInput].jobs[userInput][userInput]]);
+console.log(userInputTotal);
+
+if (userInputTotal === userInput) {
+    console.log('Je koos voor ' + departments[userInput].jobs[0]['title'] + '. Een uitdagende rol! ' + departments[userInput].jobs[0]['description']);
+} else if (userInputTotal === userInput) {
+    console.log('Je koos voor ' + departments[userInput].jobs[1]['title'] + '. Een uitdagende rol! ' + departments[userInput].jobs[1]['description']);
+} else if (userInputTotal === userInput) {
+    console.log('Je koos voor ' + departments[userInput].jobs[2]['title'] + '. Een uitdagende rol! ' + departments[userInput].jobs[2]['description']);
+} else if (userInputTotal === userInput) {
+    console.log('Je koos voor ' + departments[userInput].jobs[3]['title'] + '. Een uitdagende rol! ' + departments[userInput].jobs[3]['description']);
+} else if (userInputTotal === userInput) {
+    console.log('Je koos voor ' + departments[userInput].jobs[4]['title'] + '. Een uitdagende rol! ' + departments[userInput].jobs[4]['description']);
+} else  {
+    console.error('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.');
+}
+
+/* Ik snap de opdracht nog niet voldoende. Ik mis hier de uitleg hoe je dit uitbouwt; ik zou graag een voorbeeld hiervan willen om te oefenen alvorens de opdracht te maken. Voor mij voelt het nu als oefenen, zonder te weten in welke richting ik het moet zoeken. Ook in toekomstige opdrachten zou dit prettig zijn. */
