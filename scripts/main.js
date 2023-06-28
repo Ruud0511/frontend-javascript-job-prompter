@@ -110,3 +110,21 @@ else  {
     console.error('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.');
 }
 
+/* Opdracht 3a: We gaan er voor nu even vanuit dat de gebruiker de afdeling 'marketing' heeft gekozen. Schrijf een nieuwe prompt die de gebruiker om het volgende vraagt: */
+
+const userInputMarketing = prompt ( 'Je koos marketing. Over welke functie wil je meer weten? Voer een getal tussen 0 en 4 in. 0: [Marketingmanager], 1: [Digital Marketing Specialist], 2: [Contentmarketeer], 3: [Branding Agent], 4: [Marktonderzoeksanalist]');
+console.log(userInputMarketing);
+
+if (userInputMarketing === '0') {
+    console.log('Je koos voor ' + departments.marketing.jobs[0]['title'] + '. Een uitdagende rol! ' + departments.marketing.jobs[0]['description']);
+} else if (userInputMarketing === '1') {
+    console.log('Je koos voor ' + departments.marketing.jobs[1]['title'] + '. Een uitdagende rol! ' + departments.marketing.jobs[1]['description']);
+} else if (userInputMarketing === '2') {
+        console.log('Je koos voor ' + departments.marketing.jobs[2]['title'] + '. Een uitdagende rol! ' + departments.marketing.jobs[2]['description']);
+} else if (userInputMarketing === '3') {
+    console.log('Je koos voor ' + departments.marketing.jobs[3]['title'] + '. Een uitdagende rol! ' + departments.marketing.jobs[3]['description']);
+} else if (userInputMarketing === '4') {
+    console.log('Je koos voor ' + departments.marketing.jobs[4]['title'] + '. Een uitdagende rol! ' + departments.marketing.jobs[4]['description']);
+} else  {
+    console.error('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.');
+}
