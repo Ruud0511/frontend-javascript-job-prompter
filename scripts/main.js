@@ -154,4 +154,4 @@ if (userInputTotal === userInput) {
     console.error('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.');
 }
 
-/* Ik snap de opdracht nog niet voldoende. Ik mis hier de uitleg hoe je dit uitbouwt; ik zou graag een voorbeeld hiervan willen om te oefenen alvorens de opdracht te maken. Voor mij voelt het nu als oefenen, zonder te weten in welke richting ik het moet zoeken. Ook in toekomstige opdrachten zou dit prettig zijn. */
+/* Ik snap de opdracht nog niet voldoende. Ik mis hier de uitleg hoe je dit uitbouwt; ik zou graag een voorbeeld hiervan willen om te oefenen alvorens de opdracht te maken. Voor mij voelt het nu als oefenen, zonder te weten in welke richting ik het moet zoeken. Ook in toekomstige opdrachten zou dit prettig zijn. Dank jullie wel! :) */
