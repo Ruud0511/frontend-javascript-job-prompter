@@ -111,7 +111,7 @@ else  {
 }
 
 /* Opdracht 3a: We gaan er voor nu even vanuit dat de gebruiker de afdeling 'marketing' heeft gekozen. Schrijf een nieuwe prompt die de gebruiker om het volgende vraagt: */
-
+/*
 const userInputMarketing = prompt ( 'Je koos marketing. Over welke functie wil je meer weten? Voer een getal tussen 0 en 4 in. 0: [Marketingmanager], 1: [Digital Marketing Specialist], 2: [Contentmarketeer], 3: [Branding Agent], 4: [Marktonderzoeksanalist]');
 console.log(userInputMarketing);
 
@@ -128,3 +128,11 @@ if (userInputMarketing === '0') {
 } else  {
     console.error('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.');
 }
+
+ */
+
+/* Opdracht 4a: Zet alle code uit opdracht 2 weer aan. Comment de code uit opdracht 3 uit. Log de afdeling-beschrijving van de ingevoerde afdeling uit de eerste prompt in de console, in het volgende format: "[afdeling-naam] is een leuke afdeling om te werken. Er werken op dit moment [aantal] medewerkers." Tip: gebruik hiervoor de blokhaak notatie. */
+
+console.log(userInput + ' is een leuke afdeling om te werken. Er werken op dit moment ' + departments[userInput].numberOfEmployees + ' medewerkers.');
+
+
