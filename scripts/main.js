@@ -97,7 +97,16 @@ console.log(userInput);
 /* Opdracht 2b: tijd voor het echte werk! Op basis van wat de gebruiker invoert ("marketing", "sales" of "customer service") willen wij een beschrijving van die afdeling in de console loggen. Hiervoor typ je natuurlijk niet handmatig de beschrijvingen over! Je spreekt ze aan via het departments-object: hiervoor zul je dus een beslissingsstructuur moeten bouwen. Ongeacht de gekozen afdeling, log je de uitkomst in het volgende format: "Je koos [ingevoerde keuze]. [beschrijving afdeling]" */
 
 if (userInput === 'marketing') {
-    console.log('Je koos voor ' + userInput + departments.marketing.description);
+    console.log('Je koos voor ' + userInput + '. ' + departments.marketing.description);
 } else if (userInput === 'sales') {
-    console.log('Je koos voor ' + userInput + departments.sales.description);
+    console.log('Je koos voor ' + userInput + '. ' + departments.sales.description);
+} else if (userInput === 'customer-service') {
+    console.log('Je koos voor ' + userInput + '. ' + departments['customer-service'].description);
 }
+
+/* Opdracht 2c: test of alles werkt door alle mogelijke afdelingen een keertje te voeren en te checken of je de gewenste output krijgt. Maak jouw beslisboom nu extra gebruiksvriendelijk door de melding "Ongeldige keuze. Probeer het opnieuw door de pagina te verversen." in de console te laten zien wanneer de gebruiker een spelfout maakt of iets verkeerds invoert. Tip: je kunt hiervoor console.error() gebruiken in plaats van console.log(). */
+
+else  {
+    console.error('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.');
+}
+
